@@ -174,7 +174,7 @@ document.addEventListener("DOMContentLoaded", function () {
   /* ===== Check if Puzzle is Completed ===== */
   function checkPuzzleCompletion() {
     const lockedPieces = document.querySelectorAll(".puzzle-piece.locked");
-    if (lockedPieces.length === 9) { // Adjust if grid size changes
+    if (lockedPieces.length === 16) { // Adjust if grid size changes
       setTimeout(() => {
         popupInfo.innerText = currentPuzzleExplanation;
         popup.classList.add("visible");
