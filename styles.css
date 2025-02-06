@@ -3,12 +3,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Outfit', sans-serif;
+  font-family: 'Alegreya', sans-serif;
 }
 
 /* Body & Layout */
 body {
-  font-family: 'Outfit', sans-serif;
+  font-family: 'Alegreya', sans-serif;
   line-height: 1.6;
   background-color: #;
   color: #fff;
@@ -48,6 +48,8 @@ header {
   padding-top: 25vh; /* Increase padding-top to push content further down */
   line-height: 1;
   transition: background 0.3s ease-in-out;
+  height: 600px;
+  box-shadow: rgba(210, 176, 0, 0.2) 0px 7px 29px 0px;
 }
 
 subheader {
@@ -61,7 +63,7 @@ subheader {
   padding-bottom: 20px;
   transition: background 0.3s ease-in-out;
   margin: auto;
-  box-shadow: rgba(100, 150, 200, 0.2) 0px 7px 29px 0px;
+  box-shadow: rgba(210, 176, 0, 0.2) 0px 7px 29px 0px;
 }
 
 subheader div{
@@ -81,7 +83,7 @@ subheader img:hover{
 header img{
   width: 50vh;
   border-radius: 2vh;
-  box-shadow: rgba(23,170,235,0.4) 0px 50px 100px;
+  box-shadow: rgba(210,176,0,0.4) 0px 50px 100px;
   margin-top: 10vh;
 
 }
@@ -114,7 +116,7 @@ nav ul li img{
 
 nav ul li a {
   text-decoration: none;
-  color: #10b3ef;
+  color: #635300;
   font-size: 1rem;
   transition: all 0.3s ease;
   padding: 2px 5px;
@@ -124,7 +126,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  background-color: #10b3ef;
+  background-color: #635300;
   color: white;
   transform: translateY(-3px); /* Subtle hover effect */
 }
@@ -146,7 +148,7 @@ main {
 
 .section h3 {
   text-decoration: none;
-  color: #10b3ef;
+  color: #635300;
   font-size: 1rem;
   transition: all 0.3s ease;
   padding: 2px 5px;
@@ -178,7 +180,7 @@ main {
   animation: fadeIn 1.5s ease-out forwards;
 }
 .section h3 {
-  color: #10b3ef;
+  color: #635300;
   margin-bottom: 20px;
   text-align: center;
 }
@@ -191,7 +193,7 @@ main {
 }
 .timeline-point {
   padding: 10px 15px;
-  background-color: #10b3ef;
+  background-color: #635300;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -200,7 +202,7 @@ main {
 }
 .timeline-point:hover,
 .timeline-point.active {
-  background-color: #06b2ee;
+  background-color: #403000;
 }
 .timeline-group {
   display: block;
@@ -257,7 +259,6 @@ main {
 
 .puzzle-piece.locked {
   cursor: default;
-  border: 2px solid #10b3ef;
 }
 /* ========= Popup Modal ========= */
 .popup {
