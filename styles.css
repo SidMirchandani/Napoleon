@@ -187,9 +187,10 @@ main {
 /* ========= Timeline Navigation ========= */
 .timeline-nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   margin-bottom: 20px;
   gap: 5px;
+  flex-wrap: wrap;
 }
 .timeline-point {
   padding: 10px 15px;
