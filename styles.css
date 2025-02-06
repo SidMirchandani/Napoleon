@@ -48,7 +48,7 @@ header {
   padding-top: 25vh; /* Increase padding-top to push content further down */
   line-height: 1;
   transition: background 0.3s ease-in-out;
-  height: 600px;
+  height: 700px;
   box-shadow: rgba(210, 176, 0, 0.2) 0px 7px 29px 0px;
 }
 
