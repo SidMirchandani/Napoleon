@@ -246,8 +246,6 @@ main {
   cursor: grab;
   border: 1px solid #ddd;
   transition: box-shadow 0.2s ease;
-  width: 20px; /* Even smaller puzzle pieces */
-  height: 20px; /* Even smaller puzzle pieces */
 }
 
 .puzzle-piece:hover {
