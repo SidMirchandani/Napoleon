@@ -245,19 +245,19 @@ main {
   background-repeat: no-repeat;
   cursor: grab;
   border: 1px solid #ddd;
-  transition: box-shadow 0.2s ease;
+  transition: box-shadow 0.2s ease, border-radius 0.2s ease;
   border-radius: 10px;
 }
 
 .puzzle-piece:hover {
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3); /* Reduced shadow on hover */
-  border-radius: 0px;
+  border-radius: 10px;
 }
 
 .puzzle-piece.dragging {
   opacity: 0.7;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5); /* Reduced shadow while dragging */
-  border-radius: 0px;
+  border-radius: 10px;
 }
 
 .puzzle-piece.locked {
