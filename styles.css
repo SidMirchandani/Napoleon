@@ -289,12 +289,14 @@ main {
   padding: 20px;
   border-radius: 10px;
   text-align: center;
-  width: 300px;
+  width: 80%;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   position: relative;
+  font-color: black;
 }
 .popup-content h2 {
   margin-bottom: 10px;
+  color: black;
 }
 .popup-content p {
   font-size: 0.9rem;
@@ -331,4 +333,8 @@ footer p {
   100% {
     opacity: 1;
   }
+}
+
+h4{
+  font-color: black;
 }
