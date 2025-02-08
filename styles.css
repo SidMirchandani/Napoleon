@@ -136,25 +136,7 @@ main {
 }
 
 /* Section Styling */
-.section {
-  background-color: white;
-  opacity: 0;
-  animation: fadeIn 1.5s ease-out forwards;
-  transition: all 0.3s ease;
-  width: 90%;
-  margin-left: 5%;
-}
 
-.section h3 {
-  text-decoration: none;
-  color: #635300;
-  font-size: 1rem;
-  transition: all 0.3s ease;
-  padding: 2px 5px;
-  margin-left: 1vh;
-  margin-right: 1vh;
-  font-weight: 1000;
-}
 
 .section p {
   font-size: 15px;
@@ -174,9 +156,10 @@ main {
   margin: 20px auto;
   padding: 20px;
   border-radius: 5px;
-  width: 90%;
+  width: 95%;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   animation: fadeIn 1.5s ease-out forwards;
+  margin-bottom: 40px;
 }
 .section h3 {
   color: #635300;
@@ -337,4 +320,63 @@ footer p {
 
 h4{
   font-color: black;
+}
+
+.stats p {
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.actions button {
+  color: #635300;
+  font-size: 11px;
+  font-weight: bold;
+  margin: 5px;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+  border: none;
+  background: none;
+}
+
+.actions button:hover {
+  color: #403000;
+}
+
+#event-log {
+  margin-top: 20px;
+  font-size: 11px;
+  font-style: italic;
+  color: white;
+}
+
+.stats{
+  color: black;
+  display: flex;
+  gap: 0px 20px;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+h1{
+  color: black;
+}
+
+#game-log{
+  color: black;
+  text-align: center;
+}
+
+#event-log p {
+  color: black; /* Change text color to black */
+  background: #f3f3f3; /* Add a white background to make it readable */
+  padding: 5px;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: bold;
+  margin: 5px 0;
+  font-size: 11px;
+}
+
+#game-container {
+  text-align: center;
 }
