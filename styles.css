@@ -459,6 +459,7 @@ h1{
   display: flex;
   gap: 50px;
   flex-wrap: wrap;
+  text-align: center;
 }
 .horizontal input[type="text"] {
   flex: 1;
