@@ -207,6 +207,7 @@ main {
 
 #full-image-container {
   text-align: center;
+  align-items: center;
 }
 
 #full-image {
@@ -214,6 +215,7 @@ main {
   height: 256px; /* Same as puzzle board */
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  justify-content: center;
 }
 
 #puzzle-board {
@@ -460,13 +462,15 @@ h1{
   gap: 50px;
   flex-wrap: wrap;
   text-align: center;
+  justify-content: center;
 }
-.horizontal input[type="text"] {
+input[type="text"] {
   flex: 1;
   padding: 10px;
   border: 1px solid #ddd;
   border-radius: 5px;
   outline: none;
+  width: 100%;
 }
 .horizontal button {
   background-color: #635300;
