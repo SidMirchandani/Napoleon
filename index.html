@@ -87,13 +87,22 @@
           </button>
         </div>
 
-        <!-- Puzzle Container (common to all timelines) -->
+        <!-- Puzzle Container -->
         <div class="puzzle-container" id="puzzle-container">
-          <!-- Puzzle Board (Drop Zones) -->
-          <div id="puzzle-board"></div>
+          <div class="horizontal">
+            <!-- Puzzle Board (Drop Zones) -->
+            <div id="puzzle-board"></div>
+
+            <!-- Full Image Display -->
+            <div id="full-image-container">
+              <img id="full-image" src="" alt="Full Image">
+            </div>
+          </div>
+
           <!-- Shuffled Puzzle Pieces -->
           <div id="puzzle-pieces"></div>
         </div>
+
 
         <!-- Timeline Groups: Headings that change with timeline selection -->
         <div id="timeline-content">
@@ -157,20 +166,18 @@
           <p id="popup-info"></p>
         </div>
       </div>
- 
+
       <section class="section">
         <div class="chat-container">
           <div class="chatbot active" id="chatbot">
             <h3>Minigame Conversation</h3>
             <div class="chat-window" id="chat-window"></div>
             <!-- Single text input (no send button) -->
-            <div class="horizontal" id="minigame-input">
-              <input
-                     type="text"
-                     placeholder="Type your message and press Enter..."
-                     id="chat-input"
-                     />
-            </div>
+            <input
+                   type="text"
+                   placeholder="Type your message and press Enter..."
+                   id="chat-input"
+                   />
           </div>
         </div>
       </section>
