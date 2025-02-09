@@ -231,17 +231,17 @@ function updateStats() {
   document.getElementById('date').innerText = `${months[monthIndex]} ${year}`;
 
   let conqueredList = countries
-    .filter(c => c.status === "Conquered")
-    .map(c => `${c.name} (Army: ${c.army})`)
-    .join(", ") || "None";
+  .filter(c => c.status === "Conquered")
+  .map(c => `${c.name} (Army: ${c.army})`)
+  .join(", ") || "None";
   let warList = countries
-    .filter(c => c.status === "At War")
-    .map(c => `${c.name} (Army: ${c.army})`)
-    .join(", ") || "None";
+  .filter(c => c.status === "At War")
+  .map(c => `${c.name} (Army: ${c.army})`)
+  .join(", ") || "None";
   let remainingList = countries
-    .filter(c => c.status === "Neutral")
-    .map(c => `${c.name} (Army: ${c.army})`)
-    .join(", ") || "None";
+  .filter(c => c.status === "Neutral")
+  .map(c => `${c.name} (Army: ${c.army})`)
+  .join(", ") || "None";
 
   document.getElementById('conquered-countries').innerText = conqueredList;
   document.getElementById('countries-at-war').innerText = warList;
@@ -367,11 +367,11 @@ function attackCountry(countryName) {
     return;
   }
   gold -= attackCost;
-  
+
   // Compute total enemy army from all countries at war.
   let totalEnemyArmy = countries
-    .filter(c => c.status === "At War")
-    .reduce((sum, c) => sum + c.army, 0);
+  .filter(c => c.status === "At War")
+  .reduce((sum, c) => sum + c.army, 0);
 
   // Calculate effective power with diminishing returns and randomness.
   let playerPower = (1 + morale * 0.001) * (Math.sqrt(army) * 10 + Math.random() * 30);
@@ -460,8 +460,8 @@ function simulateEnemyActions() {
       if (country.status === "At War" && Math.random() < 0.5) {
         // Compute total enemy army from all countries at war.
         let totalEnemyArmy = countries
-          .filter(c => c.status === "At War")
-          .reduce((sum, c) => sum + c.army, 0);
+        .filter(c => c.status === "At War")
+        .reduce((sum, c) => sum + c.army, 0);
         let enemyPower = (Math.sqrt(totalEnemyArmy) * 10 + Math.random() * 30);
         let playerPower = morale * (Math.sqrt(army) * 10 + Math.random() * 30);
         if (playerPower > enemyPower) {
@@ -928,13 +928,13 @@ function addBotMessage(text, callback) {
   messageElem.className = "bot-message";
   chatWindow.appendChild(messageElem);
   chatWindow.scrollTop = chatWindow.scrollHeight;
-  
+
   let index = 0;
   function typeChar() {
     if (index < text.length) {
       messageElem.textContent += text.charAt(index);
       index++;
-      setTimeout(typeChar, 50); // Adjust the speed (milliseconds per character) as desired
+      setTimeout(typeChar, 5); // Adjusted speed: 10ms per character for 5x faster typing
     } else {
       if (callback) callback();
     }
@@ -994,7 +994,7 @@ function processNapoleonInput(input) {
     }, 1000);
     return;
   }
-  
+
   // If no event is selected, interpret the input as the event choice
   if (selectedEvent === "") {
     const eventMap = {
@@ -1015,7 +1015,7 @@ function processNapoleonInput(input) {
     }
     return;
   }
-  
+
   // Process the input for the current step of the chosen event
   const flow = conversationFlows[selectedEvent];
   if (conversationStage < flow.length) {
