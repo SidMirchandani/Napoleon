@@ -380,3 +380,87 @@ h1{
 #game-container {
   text-align: center;
 }
+
+.user-message {
+  display: inline-block;
+  background-color: rgba(300, 200, 23, 0.1);
+  color: #635300;
+  border-radius: 20px 20px 20px 10px;
+  padding: 8px 12px;
+  margin: 5px 0;
+  max-width: 70%;
+  font-size: 11px;
+}
+.bot-message {
+  font-size: 11px;
+  color: black;
+  white-space: pre-line;
+}
+
+/* Toggle Button for Widget Sidebar */
+.toggle-widget-sidebar {
+  position: fixed;
+  top: 100px;
+  right: 20px;
+  background-color: #635300;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 1100;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+/* Chat Interface Styles */
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.chatbot {
+  width: 100%;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: rgba(149, 157, 165, 0.25) 0 0 24px;
+}
+.chatbot h2 {
+  margin: 0 0 10px;
+  text-align: center;
+  color: #635300;
+}
+.chat-window {
+  height: 200px;
+  overflow-y: auto;
+  background-color: #f3f3f3;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+}
+.horizontal {
+  display: flex;
+  gap: 10px;
+}
+.horizontal input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+}
+.horizontal button {
+  background-color: #635300;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.options {
+  font-weight: bold;
+}
+
