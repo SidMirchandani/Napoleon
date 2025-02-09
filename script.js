@@ -74,22 +74,21 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  /* ===== Puzzle Initialization ===== */
   function initializePuzzle(imageUrl, explanationText) {
     // Clear existing board and pieces
     board.innerHTML = "";
     piecesContainer.innerHTML = "";
 
+    // Update the full image display
+    document.getElementById("full-image").src = imageUrl;
+
     // Store the explanation for later use
     currentPuzzleExplanation = explanationText;
 
     // Configuration variables
-    const rows = 4,
-          cols = 4;
-    const boardWidth = 250;
-    const boardHeight = 250;
-    const pieceWidth = boardWidth / cols;
-    const pieceHeight = boardHeight / rows;
+    const rows = 4, cols = 4;
+    const boardWidth = 250, boardHeight = 250;
+    const pieceWidth = boardWidth / cols, pieceHeight = boardHeight / rows;
 
     // Set up the puzzle board (drop zones)
     board.style.width = boardWidth + "px";
@@ -133,7 +132,7 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     }
 
-    // Create puzzle pieces and store them in an array
+    // Create puzzle pieces
     let piecesArray = [];
     for (let i = 0; i < rows * cols; i++) {
       const piece = document.createElement("div");
@@ -170,6 +169,7 @@ document.addEventListener("DOMContentLoaded", function () {
       piecesContainer.appendChild(piece);
     });
   }
+
 
   /* ===== Check if Puzzle is Completed ===== */
   function checkPuzzleCompletion() {
@@ -499,8 +499,8 @@ function simulateEnemyActions() {
           // If the target is still alive, there is a 1 in 20 chance for a takeover.
           if (target.army > 0 && Math.random() < 0.05) {
             target.status = "Conquered";
-            attacker.army += 20;
-            logMessage(`${attacker.name} has taken over ${target.name}! (+20 Army)`);
+            attacker.army += 100;
+            logMessage(`${attacker.name} has taken over ${target.name}! (+100 Army)`);
           } else if (target.army <= 0) {
             target.status = "Conquered";
             logMessage(`${target.name} has been conquered by ${attacker.name}!`);
