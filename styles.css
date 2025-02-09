@@ -198,7 +198,22 @@ main {
 
 /* ========= Puzzle Section Styles ========= */
 .puzzle-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* Space between puzzle and full image */
+  flex-wrap: wrap;
+}
+
+#full-image-container {
   text-align: center;
+}
+
+#full-image {
+  width: 256px; /* Adjust to fit */
+  height: 256px; /* Same as puzzle board */
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
 
 #puzzle-board {
@@ -442,7 +457,8 @@ h1{
 }
 .horizontal {
   display: flex;
-  gap: 10px;
+  gap: 50px;
+  flex-wrap: wrap;
 }
 .horizontal input[type="text"] {
   flex: 1;
