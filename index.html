@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Napoleon Team D</title>
+    <title>Napoleon Interactive Puzzles</title>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,6 +29,7 @@
              src="https://i.postimg.cc/nzWz8pNR/Napoleon-D-Short.png"
              alt="Logo"
              />
+        <h3>Interactive Puzzles</h3>
       </header>
     </section>
 
@@ -166,63 +167,7 @@
           <p id="popup-info"></p>
         </div>
       </div>
-
-      <section class="section">
-        <div class="chat-container">
-          <div class="chatbot active" id="chatbot">
-            <h3>Minigame Conversation</h3>
-            <div class="chat-window" id="chat-window"></div>
-            <!-- Single text input (no send button) -->
-            <input
-                   type="text"
-                   placeholder="Type your message and press Enter..."
-                   id="chat-input"
-                   />
-          </div>
-        </div>
-      </section>
-
-      <section class="section">
-        <div id="game-container">
-          <h3>Napoleonic War Simulator</h3>
-
-          <div class="stats">
-            <p>💰 <span id="gold">200</span></p>
-            <p>⚔️ <span id="army">30</span></p>
-            <p>🔥 Morale: <span id="morale">1.00</span></p>
-            <p>📅 <span id="date">April 1792</span></p>
-            <p>📜 Turn: <span id="turn">0</span></p>
-            <p>🏴‍☠️ Conquered: <span id="conquered-countries">None</span></p>
-            <p>⚔️ At War: <span id="countries-at-war">None</span></p>
-            <p>🌍 Remaining: <span id="remaining-countries">Austria, Prussia, Britain, Spain, Russia, Portugal, Piedmont-Sardinia</span></p>
-          </div>
-
-
-
-          <div class="actions">
-            <button onclick="recruitSoldiers()">Recruit Soldiers</button>
-
-            <!-- Declare War Button and Submenu -->
-            <button onclick="showDeclareWarMenu()">Declare War</button>
-
-            <!-- Attack Button and Submenu -->
-            <button onclick="showAttackMenu()">Attack</button>
-
-            <!-- Make Peace Button and Submenu -->
-            <button onclick="showPeaceMenu()">Make Peace</button>
-
-            <button onclick="endTurn()">End Turn</button>
-            <div id="declare-war-menu" style="visibility: hidden;"></div>
-            <div id="attack-menu" style="visibility: hidden;"></div>
-            <div id="peace-menu" style="visibility: hidden;"></div>
-          </div>
-
-
-
-
-          <div id="event-log"></div>
-        </div>
-      </section>
+      
     </main>
 
     <!-- ===== Footer Section ===== -->
